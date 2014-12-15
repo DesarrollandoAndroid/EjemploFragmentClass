@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">EjemploFragmentClass</string>
+    <string name="action_settings">Settings</string>
+    <string name="textoDetalle">Desarrollando Android</string>
+
+    <!-- Elementos ListView -->
+
+    <string name="ele1">Componentes de las aplicaciones Android</string>
+    <string name="ele2">Activity Class I</string>
+    <string name="ele3">Activity Class II</string>
+    <string name="ele4">Intent Class I</string>
+    <string name="ele5">Intent Class II</string>
+    <string name="ele6">Intent Class III</string>
+    <string name="ele7">Ejemplo: Activity Class e Intent Class</string>
+    <string name="ele8">Permisos</string>
+    <string name="ele9">Fragment Class</string>
+    <string name="ele10">Ejemplo: Fragment Class</string>
+
+    <!-- Info Detalle -->
+    <string name="info1" tools:ignore="TypographyEllipsis">Para empezar esta nueva serie de entradas, vamos a ir poco a poco profundizando en el
+        desarrollo de aplicaciones Android. A medida que avance en esta categoría vamos a ir destripando y
+        familiarizándonos con los distintos componentes que puede tener una aplicación Android. Esta entrada va a
+        ser teórica y en ella voy a describir de forma breve y aclarativa los distintos componentes.\n\n
+
+        Las aplicaciones Android pueden tener uno, varios o todos los siguientes componentes: Activity (Actividad),
+        View (Vista), BroadcastReceiver (Receptores de Difusión), ContentProvider (Proveedores de Contenido),
+        Service (Servicios),  Widget e Intent (Intenciones).\n\n
+
+        Activity: las Actividades representan el componente principal de la interfaz gráfica de una aplicación Android.
+        Son las encargadas de mostrar las interfaces de usuario e interaccionar con él, tienen asociada una definición
+        en pantalla, es decir, un Layout (XML) y responden a los eventos de usuario que son los vistos en la categoría
+        Interfaz de Usuario en Android. Las Actividades heredan de la clase Activity. Hay que recordar que cada Actividad
+        tiene un ciclo de vida.\n\n
+        View: las vistas son los componentes básicos con los que se construye la interfaz gráfica de una aplicación.
+        Android pone a nuestra disposición una gran cantidad de controles básicos, como botones, cuadros de texto, listas
+        desplegables o imágenes… También tenemos la posibilidad de extender la funcionalidad de estos controles o de crear
+        nuestros propios controles personalizados.\n\n
+        BroadcastReceiver: un receptor de difusión es un componente destinado a detectar y a reaccionar ante determinados
+        mensajes o eventos globales generados por el sistema o por otras aplicaciones como por ejemplo: batería baja, correo
+        recibido, tarjeta SD insertada... Estos componentes extienden de la clase BroadcastReceiver.\n\n
+        ContentProvider: un proveedor de contenidos nos permite compartir datos entre aplicaciones en Android. Estos
+        componentes extienden de la clase ContentProvider para implementar los métodos de la interfaz, las aplicaciones no
+        acceden a este interfaz directamente, sino que lo hacen a través de la clase ContentResolver. Esta clase nos permite
+        acceder a datos almacenados en el sistema de ficheros, bases de datos SQLite o cualquier otro sistema de datos.\n\n
+        Service: los servicios se ejecutan en segundo plano y no tienen interfaz gráfica, son los encargados de realizar
+        tareas que continúan ejecutándose cuando nuestra aplicación no está en primer plano. Los servicios extienden de la
+        clase Service y realizan cualquier tipo de acciones como actualizar datos, lanzar notificaciones o mostrar elementos
+        visuales si se requiere en algún momento la interacción con el usuario.\n\n
+        Widget: los Widget son como mini-aplicaciones que se muestra en la pantalla principal del dispositivo Android y se
+        encargan de recibir actualizaciones periódicas, es decir, muestran información de la aplicación al usuario
+        directamente sobre la pantalla principal del dispositivo.\n\n
+        Intent: las intenciones son elementos básicos de comunicación entre los distintos componentes de Android descritos
+        anteriormente. Se pueden entender como los mensajes o peticiones que son enviados entre los distintos componentes de
+        una aplicación o entre distintas aplicaciones. Mediante un Intent se puede mostrar una Actividad desde cualquier otra,
+        iniciar un Service, enviar un mensaje Broadcast, iniciar otra aplicación, etc.\n\n
+
+        Esta entrada entiendo que es un poco aburrida pero se trata de tener una idea general de los diferentes componentes
+        que puede tener una aplicación Android para posteriormente estudiarlos más en detalle. En la siguiente entrada vamos a
+        empezar con la Activity Class.</string>
+
+    <string name="info2">En esta entrada vamos a ver la Activity Class (Clase Actividad), esta entrada también va a ser teórica
+        y nos dará a conocer que nos permite hacer esta clase, como podemos comunicarnos con otra actividad o como podemos
+        obtener resultados de otra actividad. En primer lugar y antes de empezar a describir esta clase deberíamos repasar
+        los ciclos de vida de una Actividad Android. Una vez repasados y pensando en ellos vamos a adentrarnos más en esta
+        clase.</string>
+
+    <string name="info3">En esta entrada vamos a empezar a conocer el ciclo de vida de una actividad Android. Toda la
+        información la podemos encontrar aquí, pero aún así, voy a tratar de hacer un pequeño resumen para que tengamos una
+        idea general de como se comportan las Activities en Android.</string>
+
+    <string name="info4">En esta entrada vamos a ver la clase Intent, esta clase nos permite invocar a los distintos
+        componentes de Android, puedes consultarlos aquí.\n\n
+
+        Para empezar vamos a ver una pequeña definición de Intent. Un Intent es básicamente una estructura de datos que
+        tiene al menos dos propósitos en Android:</string>
+
+    <string name="info5">En esta entrada vamos a continuar con la Intent Class y en primer lugar hablaremos de los
+        Intent-filter que ya fueron nombrados en la entrada anterior. Aprenderemos a crear un Intent y por último veremos
+        los algunos ejemplos de Intents para el desarrollo de nuestras aplicaciones en Android.</string>
+
+    <string name="info6">Nos encontramos en la tercera y última parte de Intent Class y para acabar vamos a hablar sobre
+        PendingIntent y sobre ChooserIntent simplemente para tener conceptos generales sobre ellos y saber que en caso de
+        necesitarlos a la hora de diseñar nuestra aplicación Android podemos recurrir a ellos.</string>
+
+    <string name="info7">Por fin ha llegado el momento deseado por todos nosotros y lo prometido es deuda. En este ejemplo
+        práctico vamos a poner en práctica los conceptos vistos en las entradas de Activity Class y las entradas de Intent
+        Class. En esta entrada vamos a ver como pasar datos entre actividades y haremos uso de algunos Intents y del método
+        startActivityForResult().</string>
+
+    <string name="info8">En esta nueva entrada vamos a hablar de los permisos en Android. Para proteger ciertos recursos
+        y características especiales, Android define un esquema de permisos. Si estamos creando una aplicación que
+        necesite acceder a uno de estos recursos estará obligada a declarar su intención de usarlos. En el caso de que
+        nuestra aplicación intenta acceder a un recurso al cual no hemos solicitado el permiso, se generará una excepción
+        de permiso y la aplicación será interrumpida inmediatamente.</string>
+
+    <string name="info9">En esta nueva serie de entradas vamos a dar a conocer la Fragment Class y los elementos que la
+        componen. Los Fragments fueros añadidos en la versión 3.0 de Android (API nivel 11) para dar un mejor soporte más
+        dinámico y flexible a las interfaces de usuario (UI) en dispositivos con grandes pantallas como las tablets. Los
+        Fragments son la alternativa dada por los desarrolladores de Android para que una aplicación pueda soportar a nivel
+        de Layouts pantallas tanto para celulares como para tablets.</string>
+
+    <string name="info10">En esta entrada vamos a crear un Fragment, como ya sabemos un Fragment está alojado en una Actividad
+        Android y estos funcionan a partir de Android 3.0 es decir, la API de nivel 11, ahora se pueden implementar los
+        Fragments en APIs de nivel inferior utilizando la librería "android.support .v4.app". Dicho esto, lo primero que
+        haremos será crearnos un proyecto nuevo con Android Studio.</string>
+
+
+
+</resources>
